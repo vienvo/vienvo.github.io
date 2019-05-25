@@ -1,0 +1,21 @@
+#topBar {
+    background-color: rgb(177, 177, 177);
+    color: white;
+}
+
+.navbar {
+    background-color: rgb(177, 177, 177);
+}
+
+.page-footer {
+    background-color: rgb(177, 177, 177);
+    color: white;
+}
+
+#link-footer {
+    color: white;
+}
+
+h2 {
+    color: rgb(47, 47, 187);
+}

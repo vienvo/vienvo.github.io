@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<!-- Create Website Name -->
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Import necessary modules -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Import style modules -->
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+<!-- Create Navigation Bar -->
+<div id="topBar" class="row justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><strong>Latitude</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <!-- Drop Down List -->
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="max-temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
+          </div>
+        </li>
+        <!-- Regular Links -->
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+      </div>
+  </nav>
+</div>
+    
+
+    <!-- Create row and column for homepage -->
+    <div class="container">
+        <br>
+        <div class="row">
+          <!-- Summary -->
+            <div class="col-lg-7">
+                <div class="jumbotron">
+                    <h2>Summary: Latitude vs. Temperature</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12"><img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="Latitude vs. Max Temperature"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <br>
+                            <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Visualization -->
+            <div class="col-lg-5">
+                <div class="jumbotron">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a class="visualization" href="max-temperature.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="Latitude vs. Max Temperature"></a>
+                          Vs. Max Temperature</div>
+                        <div class="col-lg-6">
+                            <a class="visualization" href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid"  alt="Latitude vs. Humidity"></a>
+                          Vs. Humidity</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a class="visualization" href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid"  alt="Latitude vs. Cloudiness"></a>
+                          Vs. Cloudiness</div>
+                        <div class="col-lg-6">
+                            <a class="visualization" href="wind-speed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid"  alt="Latitude vs. Wind Speed"></a>
+                          Vs. Wind Speed</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="page-footer font-small">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a id="link-footer" target="_blank" href="https://github.com/vienvo/HW11_Web"> Vien Vo</a>
+    </div>
+</footer>
+    
+</html>
